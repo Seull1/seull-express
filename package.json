@@ -1,0 +1,25 @@
+{
+  "name": "seull-express",
+  "version": "0.1.0",
+  "description": "my js express server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seull1/seull-express.git"
+  },
+  "keywords": [
+    "js",
+    "seull",
+    "server",
+    "express"
+  ],
+  "author": "seull1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seull1/seull-express/issues"
+  },
+  "homepage": "https://github.com/Seull1/seull-express#readme"
+}
