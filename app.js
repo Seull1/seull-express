@@ -1,16 +1,17 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const myCommon = require('seull1-common-fun')
+const app = express()
+const port = 3000
 
-router.get('/artists/:id',function(req,res){
-	console.log("id 는" + req.params.id+"입니다")
-	res.send("id : " + req.params.id)
-});
+app.get('/', (req, res) => {
+  const a = 1
+  const b = 10
+  let myJson = { "Hello": "World", "ADD": myCommon.add(a, b) }
 
-router.get('/artists/:id/company/:company',function (req,res){
-	res.send("id : " +req.params.id +" 회사 : "+ req.params.company)
-});
+  res.json(myJson)
+})
 
-router.get('/artists', function (req, res) {
-  console.log("이름은 " + req.query.name + " 입니다")
-  res.send("name : " + req.query.name)
-});
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
