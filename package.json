@@ -1,6 +1,6 @@
 {
   "name": "seull-express",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "my js express server",
   "main": "app.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Seull1/seull-express#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "seull1-common-fun": "^0.2.1"
   }
 }
